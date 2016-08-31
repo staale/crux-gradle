@@ -1,0 +1,10 @@
+evaluationDependsOn(':webapp')
+
+
+task dist(type: Zip, dependsOn: ':webapp:war') {
+    baseName = 'crux-gradle'
+    from 'crux-base'
+    into('mod') {
+        from project(":webapp").war.archivePath
+    }
+}

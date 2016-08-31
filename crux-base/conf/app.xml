@@ -1,0 +1,12 @@
+<application>
+    <name>Hello Demo Application</name>
+    <customer>Hello</customer>
+    <modules>
+        <webapp>
+            <file-name>webapp-1.0.0-SNAPSHOT.war</file-name>
+            <context-path>/hello</context-path>
+        </webapp>
+    </modules>
+    <crux-extension-modules>
+    </crux-extension-modules>
+</application>
